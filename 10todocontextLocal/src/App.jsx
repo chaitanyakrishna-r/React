@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {TodoProvider} from './contexts'
-import { TodoItems } from './components'
+import {TodoForm ,TodoItems } from './components'
 
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
                           <div key={todo.id}
                           className='w-full'
                           >
-                            <TodoItem todo={todo} />
+                            <TodoItems todo={todo} />
                           </div>
                         ))}
                     </div>
